@@ -1,0 +1,8 @@
+loObjeto =goServicios.Exportaciones.Procesar("preciodearticulo",.F.,"preciodearticulo")
+loDestino = loObjeto.CrearObjetoDestino()
+loDestino.cDescripcion = "EXPORTAR"
+loDestino.cDestino = "C:\Dragonfish\EXPO\"
+loDestino.cArchivo = "precio"
+loDestino.lappendear = loObjeto.oDisenoimpoexpo.appendarchivo
+loObjeto.oDestinos.Agregar( loDestino )
+goServicios.Exportaciones.enviar(loObjeto, .t.)
