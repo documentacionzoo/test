@@ -1,0 +1,2 @@
+Código del script: EMPPEDIDOVENTA
+Empaqueta los pedidos de venta con fecha de modificación del día a la carpeta c:\dragonfish\salida\pedidos

@@ -1,0 +1,2 @@
+Código del script: REM A REM
+Tiene puesto un filtro para que empaquete solo los remitos de venta que sean del dia, y que en el campo motivo este cargado "ED" a la carpeta c:\Dragonfish\remitos

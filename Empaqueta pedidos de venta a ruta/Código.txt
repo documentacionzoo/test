@@ -1,0 +1,15 @@
+loObjeto = goServicios.Transferencias.procesar("PEDIDO",.F. )
+loDestino = loObjeto.CrearObjetoDestino()
+loDestino.cDescripcion = "CARPETA"
+loDestino.cDestino = "C:\Dragonfish\Salida\pedidos\"
+loObjeto.oFiltros[2].Valor1 = date()
+loObjeto.oFiltros[2].Valor2 = date()
+loObjeto.odestinos.agregar(lodestino)
+loSeleccion = goServicios.crearobjeto( "selecciontransferencias" )
+loFormulario = loSeleccion.ObtenerFormulario( loObjeto, .f. )
+goServicios.Monitor.EnviarTransferencia( loObjeto )
+loFormulario.release()
+loSeleccion.release()
+loDestino.release()
+loObjeto.release()
+_Screen.Zoo.App.Salir()

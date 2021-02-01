@@ -1,0 +1,2 @@
+Código del script: EMPCLIENTES
+Empaqueta los clientes dados de alta en el dia a la base "BASE2"

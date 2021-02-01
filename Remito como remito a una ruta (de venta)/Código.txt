@@ -1,0 +1,12 @@
+loObjeto = goServicios.Transferencias.procesar("REMITO",.F. )
+loDestino = loObjeto.CrearObjetoDestino()
+loDestino.cDescripcion = "CARPETA"
+loDestino.cDestino = "C:\Dragonfish\remitos\"
+loObjeto.oFiltros[2].Valor1 = date()
+loObjeto.oFiltros[2].Valor2 = date()
+loObjeto.oFiltros[11].Valor1 = "ED"
+loObjeto.oFiltros[11].Valor2 = "ED"
+loobjeto.odestinos.agregar(lodestino)
+goServicios.Monitor.EnviarTransferencia( loObjeto )
+loDestino.release()
+loObjeto.release()
