@@ -1,0 +1,19 @@
+loObjeto =goServicios.Exportaciones.Procesar("PEDIDO DE VENTA PRUEBA1",.F.,"Pedido")
+loDestino = loObjeto.CrearObjetoDestino()
+loDestino.cDescripcion = "EXPORTAR"
+loDestino.cDestino = "C:\APROBAR\"
+loDestino.cArchivo = "Pedido de venta" + " " + ttoc(datetime(),1)
+loDestino.lappendear = loObjeto.oDisenoimpoexpo.appendarchivo
+loObjeto.oDestinos.Agregar( loDestino )
+loObjeto.oFiltros.Item(1).Valor1 = ""
+loObjeto.oFiltros.Item(1).Valor2 = "Z"
+loObjeto.oFiltros.Item(2).Valor1 = ""
+loObjeto.oFiltros.Item(2).Valor2 = "9999"
+loObjeto.oFiltros.Item(3).Valor1 = ""
+loObjeto.oFiltros.Item(3).Valor2 = "99999999"
+loObjeto.oFiltros.Item(4).Valor1 = ""
+loObjeto.oFiltros.Item(4).Valor2 = date()
+loObjeto.oFiltros.Item(5).Valor1 = ""
+loObjeto.oFiltros.Item(5).Valor2 = date()
+goServicios.Exportaciones.enviar(loObjeto, .t.)
+

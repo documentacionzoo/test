@@ -1,0 +1,6 @@
+Código del script: EXPOPEDIDOS
+Exporta un archivo a disco.
+
+Explicación de campos:
+loDestino.cArchivo = "Pedido de venta" + " " + ttoc(datetime(),1) - agrega el timestamp en el nombre del archivo.
+loObjeto.oFiltros.Item(1).Valor1 = "" - establece los filtros según los respectivos campos de la exportación.
