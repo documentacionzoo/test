@@ -1,0 +1,7 @@
+Código del script: TESTPIPOBI
+Exporta un listado a disco.
+
+Explicación de campos:
+loLanzador.SetearBaseDeDatos( "[GRUPO1]") – Como referenciar a un agrupamiento
+loLanzador.SetearSalida( " XLSTABLAEXTENDIDO", "C:\Users\default\Desktop") Como indicar el formato y la ruta de destino del archivo.
+loLanzador.SetearNombreArchivo("CPTECAJADF",.T.) Como indicar que nombre debe tener el archivo, el segundo argumento es para que incluya fecha y hora o no. Si esta en “.F.” no lo incluye, si esta en “.T.” si lo hace.

@@ -1,0 +1,16 @@
+loLanzador = goServicios.Listados.ObtenerLanzadorDeListados()
+loLanzador.Setearcodigodelistado( "GENERICO_COMPROBANTEDECAJA_ITEMVALORESCAJA" )
+"***SetearVisualizacion indicar el código interno de la visualización a cargar***"
+loLanzador.SetearVisualizacion( "18198BDF0138711402718DC217026678824611" )
+"***SetearBaseDeDatos indica el Agrupamiento ó la Base de datos donde se realizará la busqueda de información***"
+loLanzador.SetearBaseDeDatos( "[GRUPO1]")
+"***SetearTipoDestino, admite tres valores ARCHIVO, MAIL, APLICACION***"
+loLanzador.SetearTipoDestino( "ARCHIVO")
+"***CambiarValorDeFiltro, tres parametros Identificador del campo, valor desde, valor hasta***"
+"***SetearSalida, admite los siguientes valores: PANTALLA, PDF, XLS, RTF, DOC, XML, HTML, HTMLEXTENDIDO, ***"
+"***    XLSEXTENDIDO, XLSTABLAEXTENDIDO,  PIVOTTABLESEXTENDIDO, DOCEXTENDIDO, RTFEXTENDIDO y XMLTABLAEXTENDIDO ***"
+loLanzador.SetearSalida( " XLSTABLAEXTENDIDO", "C:\Users\default\Desktop")
+"***Si el valor de SetearTipoDestino es EMAIL, configurar los siguientes valores***"
+loLanzador.SetearNombreArchivo("CPTECAJADF",.T.)
+loLanzador.Procesar()
+
